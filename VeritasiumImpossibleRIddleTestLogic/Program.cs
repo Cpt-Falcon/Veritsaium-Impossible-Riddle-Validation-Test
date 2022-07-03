@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// A test based on this video: https://www.youtube.com/watch?v=iSNsgj1OCLA
 
 const int MaxCheckCount = 50;
 const int NumPrisoners = 100;
@@ -36,7 +36,7 @@ for (int seqCnt = 0; seqCnt < SequenceCount; seqCnt++)
         int nextPrisonerBoxToCheck = prisoner;
         while (currentCount < MaxCheckCount && prisonerNumberArray[nextPrisonerBoxToCheck - 1] != prisoner)
         {
-            // Set the next prisoner box to check to be whatever the randomly assigned value in the array is.
+            // Set the next prisoner box to be whatever the randomly assigned value in the array is.
             nextPrisonerBoxToCheck = prisonerNumberArray[nextPrisonerBoxToCheck - 1];
             currentCount++;
         }
